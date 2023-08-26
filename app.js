@@ -13,12 +13,6 @@ async function generateWallet() {
         // Set private key and address values on the page
         document.getElementById('privateKey').value = acc.privateKey;
         document.getElementById('address').value = acc.address;
-
-        // Log the generated wallet in the console
-        console.log("Generated Wallet:", {
-            privateKey: acc.privateKey,
-            address: acc.address
-        });
     } else {
         // Web3 provider not found, display an error message or handle the situation accordingly
         console.error("No Web3 provider found");
