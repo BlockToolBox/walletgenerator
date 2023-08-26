@@ -24,3 +24,7 @@ async function generateWallet() {
         console.error("No Web3 provider found");
     }
 }
+window.addEventListener('DOMContentLoaded', () => {
+  const generateWallet = document.getElementById('genWallet');
+  genWallet.addEventListener('click', generateWallet);
+});
